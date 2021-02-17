@@ -1,0 +1,9 @@
+.udemyCarousel {
+    background: url(../img/cover.jpg) no-repeat center center;
+    background-size: cover;
+    height: 500px;
+    // .input-group {
+    //     border: 1px solid #d8d8d8;
+    // }
+    @include search();
+}

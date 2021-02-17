@@ -1,0 +1,15 @@
+.students {
+    .students__responsive {
+        @include carousel();
+        .courses__items {
+            cursor: pointer;
+        }
+    }
+    h1 {
+        padding-top: 20px;
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 1.47em;
+        color: #505763;
+    }
+}

@@ -1,0 +1,39 @@
+.services {
+    background-color: #f2f3f5;
+    padding: 20px;
+    .services__row {
+        justify-content: space-around;
+    }
+    .services__items {
+        background: #fff;
+        border: 1px solid #e8e9eb;
+        border-radius: 2px;
+        display: block;
+        margin-right: 16px;
+        padding: 16px;
+        height: 150px;
+        overflow: hidden;
+        i {
+            color: #77c5d6;
+            font-size: 40px;
+            margin-right: 20px;
+            border: 1px solid black;
+            border-radius: 50%;
+            width: 46px;
+            height: 46px;
+            line-height: 44px;
+            text-align: center;
+        }
+        p {
+            &:first-child {
+                font-weight: bold;
+            }
+            margin-bottom: 10px;
+        }
+    }
+    .slick-dots {
+        li {
+            transform: scale(5);
+        }
+    }
+}

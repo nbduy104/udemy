@@ -1,0 +1,80 @@
+.header__border {
+    width: 100%;
+    height: 0.6rem;
+    background: linear-gradient(90deg, rgb(100, 91, 83) 0%, rgb(235, 82, 82) 18.23%, rgb(247, 143, 47) 34.37%, rgb(244, 193, 81) 48.96%, rgb(82, 187, 118) 66.15%, rgb(38, 165, 215) 82.29%, rgb(224, 105, 183) 100%);
+}
+
+@media screen and (min-width:768px) {
+    .navbar-toggler,
+    .search__sm {
+        display: none;
+    }
+}
+
+.search__sm {
+    color: gray;
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    flex-direction: row;
+    .navbar-brand {
+        // Xét vùng trống flex-grow
+        flex-grow: 1;
+        img {
+            width: 110px;
+        }
+    }
+    .categories {
+        flex-grow: 1;
+        color: rgba(0, 0, 0, .5);
+        cursor: pointer;
+    }
+    .headerForm {
+        flex-grow: 5;
+        .input-group {
+            border: 1px solid #d8d8d8;
+        }
+        @include search();
+    }
+    @media screen and (max-width:768px) {
+        span,
+        .headerForm {
+            display: none;
+        }
+        text-align: center;
+    }
+}
+
+.header__right {
+    .btn__login {
+        border: 1px solid gray;
+    }
+    .navbar-nav {
+        white-space: nowrap;
+        flex-direction: row;
+    }
+    .nav-item {
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
+    @media screen and (max-width:1370px) {
+        .nav-item:nth-child(1),
+        .nav-item:nth-child(2) {
+            padding: 0;
+        }
+    }
+    @media screen and (max-width:1200px) {
+        .nav-item:nth-child(1),
+        .nav-item:nth-child(2) {
+            display: none;
+        }
+    }
+    @media screen and (max-width:768px) {
+        .nav-item:nth-child(4) {
+            display: none;
+        }
+    }
+}
