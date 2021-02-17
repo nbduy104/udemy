@@ -1,55 +1,56 @@
 .partners {
-    background-color: #f7f8fa;
-    .logo {
-        padding: 0;
-        vertical-align: middle;
+  background-color: #f7f8fa;
+  .logo {
+    padding: 0;
+    vertical-align: middle;
+  }
+  h6 {
+    color: #686f7a;
+    font-size: 13px;
+    padding-top: 16px;
+    text-align: center;
+  }
+  .partners__items1 {
+    cursor: pointer;
+  }
+  .partners__content {
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .partners__items2 {
+    margin: 0;
+    .partners__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 60%;
+      h3 {
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 1.47em;
+        color: #505763;
+        white-space: nowrap;
+      }
+      @media screen and (max-width: 1140px) {
+        width: 70%;
+      }
+      @media screen and (max-width: 578px) {
+        width: 90%;
+      }
     }
-    h6 {
-        color: #686f7a;
-        font-size: 13px;
-        padding-top: 16px;
-        text-align: center;
+    @media screen and (max-width: 768px) {
+      .py-3.border-right {
+        border: none !important;
+      }
     }
-    .partners__items1 {
-        cursor: pointer;
+    button {
+      font-weight: 700;
+      background-color: #ec5252;
+      border-radius: 2px;
+      padding: 10px 13px;
+      white-space: nowrap;
     }
-    .partners__content {
-        max-width: 1440px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    .partners__items2 {
-        .partners__text {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            width: 60%;
-            h3 {
-                font-size: 19px;
-                font-weight: 700;
-                line-height: 1.47em;
-                color: #505763;
-                white-space: nowrap;
-            }
-            @media screen and (max-width:1140px) {
-                width: 70%;
-            }
-            @media screen and (max-width:578px) {
-                width: 90%;
-            }
-        }
-        @media screen and (max-width:768px) {
-            .py-3.border-right {
-                border: none !important;
-            }
-        }
-        button {
-            font-weight: 700;
-            background-color: #ec5252;
-            border-radius: 2px;
-            padding: 10px 13px;
-            white-space: nowrap;
-        }
-    }
+  }
 }

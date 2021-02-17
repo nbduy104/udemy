@@ -28,6 +28,10 @@ body {
   }
 }
 
+.navbar-toggler {
+  font-size: 0.65rem;
+}
+
 .search__sm {
   color: gray;
 }
@@ -105,8 +109,8 @@ body {
 }
 
 .header__right .nav-item {
-  padding-right: .5rem;
-  padding-left: .5rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
 }
 
 @media screen and (max-width: 1370px) {
@@ -885,6 +889,10 @@ body {
   max-width: 1440px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.partners .partners__items2 {
+  margin: 0;
 }
 
 .partners .partners__items2 .partners__text {
